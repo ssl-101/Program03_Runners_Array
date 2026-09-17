@@ -5,7 +5,7 @@
 
 using namespace std;
 
-bool readRunnerData (const string& filename, string names[], double miles[][DAYS_OF_WEEK]){
+bool readFile(const string& filename, string names[], double miles[][DAYS_OF_WEEK]){
     ifstream inFile(runners.txt);
     if (!inFile){
         return false;
@@ -20,3 +20,5 @@ bool readRunnerData (const string& filename, string names[], double miles[][DAYS
     inFile.close();
     return true;
 }
+//total calculation and average calculations
+void calculat
