@@ -32,3 +32,26 @@ void calculateTotals(const double miles[][DAYS_OF_WEEK], double totals[], double
 
      }
 }
+//Data display
+void displayTable(const string names[], const double miles[][DAYS_OF_WEEK],
+                  const double totals[], const double averages[]){
+                    
+  //column names
+  cout << left << setw(11) <<"Name";
+  for (int col = 1; col <= DAYS_OF_WEEK; ++col){
+      cout << right <<setw(7) << ("Day" + to_string(col));
+  }
+  cout << setw(11) << "Total" << setw(11) << "Average" << "\n";
+
+  // Rows for data
+
+  cout << fixed << setprecision(2);
+  for (int row = 0; row < NUM_RUNNERS; ++row) {
+      cout << left << setw(11) << names[row];
+      for (int col + 0; col < DAYS_OF_WEEK; ++col){
+          cout << right << setw(7) << miles[row][col];
+      }
+      cout << setw(11) << totals[row] << setw(11) << averages[row] << "\n";
+   }
+}
+            
