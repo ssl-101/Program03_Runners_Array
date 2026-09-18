@@ -33,7 +33,7 @@ void calculateTotals(const double miles[][DAYS_OF_WEEK], double totals[], double
      }
 }
 //Data display
-void displayTable(const string names[], const double miles[][DAYS_OF_WEEK],
+void displayResults(const string names[], const double miles[][DAYS_OF_WEEK],
                   const double totals[], const double averages[]){
                     
   //column names

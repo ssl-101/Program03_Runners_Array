@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/Users/sihamlee/Documents/CSC222/Program03_Runners_Array/build",
+  "command": "/usr/bin/clang++ -I/Users/sihamlee/Documents/CSC222/Program03_Runners_Array/include -g -std=gnu++17 -arch arm64 -o CMakeFiles/Program03_Runners_Array.dir/src/main.cpp.o -c /Users/sihamlee/Documents/CSC222/Program03_Runners_Array/src/main.cpp",
+  "file": "/Users/sihamlee/Documents/CSC222/Program03_Runners_Array/src/main.cpp",
+  "output": "/Users/sihamlee/Documents/CSC222/Program03_Runners_Array/build/CMakeFiles/Program03_Runners_Array.dir/src/main.cpp.o"
+},
+{
+  "directory": "/Users/sihamlee/Documents/CSC222/Program03_Runners_Array/build",
+  "command": "/usr/bin/clang++ -I/Users/sihamlee/Documents/CSC222/Program03_Runners_Array/include -g -std=gnu++17 -arch arm64 -o CMakeFiles/Program03_Runners_Array.dir/src/Runners.cpp.o -c /Users/sihamlee/Documents/CSC222/Program03_Runners_Array/src/Runners.cpp",
+  "file": "/Users/sihamlee/Documents/CSC222/Program03_Runners_Array/src/Runners.cpp",
+  "output": "/Users/sihamlee/Documents/CSC222/Program03_Runners_Array/build/CMakeFiles/Program03_Runners_Array.dir/src/Runners.cpp.o"
+}
+]
