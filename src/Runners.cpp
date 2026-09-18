@@ -52,6 +52,7 @@ void displayResults(const string names[], const double miles[][DAYS_OF_WEEK],
           cout << right << setw(7) << miles[row][col];
       }
       cout << setw(11) << totals[row] << setw(11) << averages[row] << "\n";
+      cout << "-----------------------------------------------------------------------------------" << endl;
    }
 }
             
