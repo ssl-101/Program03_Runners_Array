@@ -6,7 +6,7 @@
 using namespace std;
 
 bool readFile(const string& filename, string names[], double miles[][DAYS_OF_WEEK]){
-    ifstream inFile(runners.txt);
+    ifstream inFile(filename);
     if (!inFile){
         return false;
     }
@@ -25,7 +25,7 @@ void calculateTotals(const double miles[][DAYS_OF_WEEK], double totals[], double
      for (int row = 0; row < NUM_RUNNERS; ++row){
         double sum = 0.0;
         for (int col = 0; col < DAYS_OF_WEEK; ++col){
-            sum +== miles[row][col];
+            sum += miles[row][col];
         }
         totals[row] = sum;
         averages[row] = sum / DAYS_OF_WEEK;
@@ -48,7 +48,7 @@ void displayTable(const string names[], const double miles[][DAYS_OF_WEEK],
   cout << fixed << setprecision(2);
   for (int row = 0; row < NUM_RUNNERS; ++row) {
       cout << left << setw(11) << names[row];
-      for (int col + 0; col < DAYS_OF_WEEK; ++col){
+      for (int col = 0; col < DAYS_OF_WEEK; ++col){
           cout << right << setw(7) << miles[row][col];
       }
       cout << setw(11) << totals[row] << setw(11) << averages[row] << "\n";

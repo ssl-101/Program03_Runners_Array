@@ -1,4 +1,4 @@
-#ifdef RUNNERS_H
+#ifndef RUNNERS_H
 #define RUNNERS_H
 
 #include <string>
@@ -11,10 +11,10 @@ const int DAYS_OF_WEEK = 7;
 bool readFile(const std::string& filename, 
      std::string names[], 
      double miles[][DAYS_OF_WEEK]);
-void calculateTotals(const double miles[][DAYS_OF_WEEKS], 
+void calculateTotals(const double miles[][DAYS_OF_WEEK], 
      double totals[],
      double averages[]);
-void displayResults(const std;;string names[],
+void displayResults(const std::string names[],
      const double miles[][DAYS_OF_WEEK],
      const double totals[],
      const double averages[]);
